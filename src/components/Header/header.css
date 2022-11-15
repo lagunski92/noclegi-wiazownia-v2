@@ -1,122 +1,121 @@
 .links-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 111px;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 111px;
+  margin: 0;
+  padding: 0;
 }
 
 .nocleg {
-    width: 170px;
-    height: 111px;
-    margin-top: 16px;
-    margin-left: 10px;
+  width: 170px;
+  height: 111px;
+  margin-top: 16px;
+  margin-left: 10px;
 }
 
 .links {
-    display: flex;
-    align-items: flex-start;
-    padding-top: 22px;
+  display: flex;
+  align-items: center;
 }
 
 .links a:active {
-    text-decoration: underline #971831;
-    text-decoration-thickness: 4px;
+  text-decoration: underline #971831;
+  text-decoration-thickness: 4px;
 }
 
 .image {
-    margin-right: 75px;
-    font-weight: 600;
-    font-size: 25px;
-    color: black;
+  margin-right: 75px;
+  font-weight: 600;
+  font-size: 25px;
+  color: black;
 }
 
 .youtube {
-    width: 36px;
-    height: 25px;
-    margin-top: 3px;
-    margin-right: 34px;
+  width: 36px;
+  height: 25px;
+  margin-top: -5px;
+  margin-right: 34px;
 }
 
 .facebook {
-    width: 30px;
-    height: 30px;
-    margin-right: 32px;
+  width: 30px;
+  height: 30px;
+  margin-top: -5px;
+  margin-right: 32px;
 }
 
 .title {
-    display: block;
-    text-align: start;
-    padding-bottom: 10px;
-    z-index: -100;
+  display: block;
+  text-align: start;
+  padding-bottom: 10px;
+  z-index: -100;
 }
 
 h2 {
-    color: white;
-    width: 100%;
-    padding-top: 23px;
-    padding-left: 34px;
-    font-size: 48px;
-    line-height: 59px;
-    font-weight: 700;
+  color: white;
+  width: 100%;
+  padding-top: 23px;
+  padding-left: 34px;
+  font-size: 48px;
+  line-height: 59px;
+  font-weight: 700;
 }
 h3 {
-    color: white;
-    width: 100%;
-    margin-top: -5px;
-    padding-left: 34px;
-    margin-left: 0;
-    margin-bottom: 17px;
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 700;
+  color: white;
+  width: 100%;
+  margin-top: -5px;
+  padding-left: 34px;
+  margin-left: 0;
+  margin-bottom: 17px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
 }
 
 .contact {
-    display: inline-flex;
-    justify-content: flex-start;
-    background-color: white;
-    border-radius: 15px;
-    width: 214px;
-    height: 42px;
-    margin-left: 34px;
-    margin-right: 45px;
+  display: inline-flex;
+  justify-content: flex-start;
+  background-color: white;
+  border-radius: 15px;
+  width: 214px;
+  height: 42px;
+  margin-left: 34px;
+  margin-right: 45px;
 }
 
 .map {
-    display: inline-flex;
-    align-items: center;
-
+  display: inline-flex;
+  align-items: center;
 }
 
 .map-icon {
-    width: 35px;
-    height: 35px;
-    margin-right: 9px;
+  width: 35px;
+  height: 35px;
+  margin-right: 9px;
 }
 
 .map p {
-    font-size: 23px;
-    font-weight: 600;
-    color: white;
-    border-radius: 15px;
-    margin: 0;
+  font-size: 23px;
+  font-weight: 600;
+  color: white;
+  border-radius: 15px;
+  margin: 0;
 }
 
 .phone-icon {
-    width: 14px;
-    height: 17px;
-    margin-top: 14px;
-    margin-left: 21px;
-    margin-right: 10px;
-    transform: rotate(4deg);
+  width: 14px;
+  height: 17px;
+  margin-top: 14px;
+  margin-left: 21px;
+  margin-right: 10px;
+  transform: rotate(4deg);
 }
 
 .contact p {
-    font-size: 24px;
-    font-weight: 500;
-    background-color: white;
-    border-radius: 15px;
-    padding-top: 5px;
+  font-size: 24px;
+  font-weight: 500;
+  background-color: white;
+  border-radius: 15px;
+  padding-top: 5px;
 }

@@ -27,7 +27,6 @@ h3:after {
     border: 2px solid #971831;
     border-radius: 15px;
 
-
 }
 
 .room p {
@@ -58,4 +57,24 @@ h3:after {
     margin: 0 30px 0 30px;
     gap: 22px;
 
+}
+
+.laundry img {margin-bottom:-25px !important; width: 27px !important; padding-top: 4px}
+.users img {margin-bottom:-26px !important; width: 27px !important; padding-top: 4px}
+.kitchen img {margin-bottom:-26px !important; width: 27px !important; padding-top: 4px}
+.bathroom img {margin-bottom:-26px !important; width: 27px !important; padding-top: 4px}
+
+.test img {margin-bottom:-28px;}
+.test span {
+    margin-left: 40px;
+    font-size: 19px;
+}
+.test {
+    width: 148px;
+    height: 42px;
+    border: 2px solid #971831;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-top: 2px;
+    margin: 47px 0 47px 30px;
 }
