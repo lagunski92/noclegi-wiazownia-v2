@@ -1,0 +1,61 @@
+.images-title h3 {
+    color: black;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39px;
+    text-decoration: underline #971831;
+    text-decoration-thickness: 8px;
+    margin-top: 96vh;
+    margin-bottom: 0;
+}
+
+h3:after {
+    border-radius: 10px;
+}
+
+.room {
+    display: inline-flex;
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    margin-left: 30px;
+    margin-top: 47px;
+    margin-bottom: 47px;
+    width: 148px;
+    height: 42px;
+    border: 2px solid #971831;
+    border-radius: 15px;
+
+
+}
+
+.room p {
+    padding-left: 14px;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 23px;
+}
+
+.room img {
+    padding-bottom: 6px;
+    width: 29px;
+    height: 29px;
+}
+
+.building p {
+    padding-left: 6px !important;
+}
+
+.building img {
+    padding-bottom: 10px !important;
+    padding-left: 0 !important;
+    width: 33px !important;
+    height: 33px !important;
+}
+
+.rooms {
+    margin: 0 30px 0 30px;
+    gap: 22px;
+
+}
