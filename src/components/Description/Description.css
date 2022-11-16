@@ -1,0 +1,28 @@
+.wrapper {
+    background-image: url(./../../assets/icons/Tree.png);
+    background-position: bottom left;
+    background-repeat: repeat-x;
+    position: relative;
+    height: 308px;
+    background-color: #EDEDED;
+}
+
+.description {
+    height: 164px;
+    width: 392px;
+    border: 3px solid #68B982;
+    border-radius: 25px;
+    background-color: white;
+    margin-top: 51px;
+    margin-bottom: 91px;
+    padding: 20px 20px 35px 25px;
+}
+
+.description span {
+    color: #303130;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+

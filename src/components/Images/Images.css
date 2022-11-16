@@ -1,80 +1,95 @@
 .images-title h3 {
-    color: black;
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 39px;
-    text-decoration: underline #971831;
-    text-decoration-thickness: 8px;
-    margin-top: 96vh;
-    margin-bottom: 0;
+  color: black;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 39px;
+  text-decoration: underline #971831;
+  text-decoration-thickness: 8px;
+  margin-top: 86vh;
+  margin-left: 30px;
+  margin-bottom: 0;
 }
 
 h3:after {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 .room {
-    display: inline-flex;
-    text-align: center;
-    padding-left: 10px;
-    padding-top: 9px;
-    padding-bottom: 10px;
-    margin-left: 30px;
-    margin-top: 47px;
-    margin-bottom: 47px;
-    width: 148px;
-    height: 42px;
-    border: 2px solid #971831;
-    border-radius: 15px;
-
+  display: inline-flex;
+  text-align: center;
+  padding-left: 10px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  margin-left: 30px;
+  margin-top: 47px;
+  margin-bottom: 47px;
+  width: 148px;
+  height: 42px;
+  border: 2px solid #971831;
+  border-radius: 15px;
 }
 
 .room p {
-    padding-left: 14px;
-    font-size: 19px;
-    font-weight: 500;
-    line-height: 23px;
+  padding-left: 14px;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 23px;
 }
 
 .room img {
-    padding-bottom: 6px;
-    width: 29px;
-    height: 29px;
+  padding-bottom: 6px;
+  width: 29px;
+  height: 29px;
 }
 
-.building p {
-    padding-left: 6px !important;
-}
 
-.building img {
-    padding-bottom: 10px !important;
-    padding-left: 0 !important;
-    width: 33px !important;
-    height: 33px !important;
-}
 
 .rooms {
-    margin: 0 30px 0 30px;
-    gap: 22px;
-
+  margin: 0 30px 0 30px;
+  gap: 22px;
 }
 
-.laundry img {margin-bottom:-25px !important; width: 27px !important; padding-top: 4px}
-.users img {margin-bottom:-26px !important; width: 27px !important; padding-top: 4px}
-.kitchen img {margin-bottom:-26px !important; width: 27px !important; padding-top: 4px}
-.bathroom img {margin-bottom:-26px !important; width: 27px !important; padding-top: 4px}
+.laundry img {
+  margin-bottom: -25px !important;
+  width: 27px !important;
+  padding-top: 4px;
+}
+.users img {
+  margin-bottom: -26px !important;
+  width: 27px !important;
+  padding-top: 4px;
+}
+.kitchen img {
+  margin-bottom: -26px !important;
+  width: 27px !important;
+  padding-top: 4px;
+}
+.bathroom img {
+  margin-bottom: -26px !important;
+  width: 27px !important;
+  padding-top: 4px;
+}
+.building {
+padding-left: 6px !important;
+}
 
-.test img {margin-bottom:-28px;}
+.test img {
+  margin-bottom: -26px;
+}
 .test span {
-    margin-left: 40px;
-    font-size: 19px;
+  margin-left: 40px;
+  font-size: 19px;
+  line-height: 23px;
+  font-weight: 500;
 }
 .test {
-    width: 148px;
-    height: 42px;
-    border: 2px solid #971831;
-    border-radius: 15px;
-    padding-left: 10px;
-    padding-top: 2px;
-    margin: 47px 0 47px 30px;
+  width: fit-content;
+  height: 42px;
+  border: 2px solid #971831;
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-top: 2px;
+  margin: 47px 30px 47px 30px;
 }
+

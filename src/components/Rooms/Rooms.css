@@ -1,0 +1,28 @@
+.main-title h3 {
+    color: black;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39px;
+    text-decoration: underline #971831;
+    text-decoration-thickness: 8px;
+    margin-bottom: 0;
+}
+
+.rooms-wrapper {
+    margin-left: 47px;
+    margin-right: 47px;
+    margin-top: 33px;
+}
+
+.img {
+    cursor: pointer;
+}
+
+.equipment p{
+    border: 2px solid #C0C0C0;
+    border-radius: 10px;
+}
+
+li {
+    list-style: outside;
+}
