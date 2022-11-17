@@ -1,0 +1,58 @@
+/*.kontakt-wrapper {
+    overflow: hidden !important;
+    background-image: url("./../../assets/images/Tlo_kontakt.png");
+    height: 562px;
+    width: 100%;
+    background-position: bottom left;
+}
+
+.kontakt-links img {
+    height: 100%;
+    z-index: -100;
+
+}*/
+
+#footer {
+  position: relative;
+  width: 100%;
+  min-height: 562px;
+  background-image: url("./../../assets/images/Tlo_kontakt.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.vehicle {
+  position: absolute;
+  bottom: 60px;
+  left: -250px;
+  -webkit-animation-name: ride; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 17s; /* Safari 4.0 - 8.0 */
+  animation-name: ride;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.vehicle.p2 {
+  animation-delay: 2s;
+}
+.vehicle.p3 {
+  animation-delay: 4s;
+  animation-duration: 16s;
+}
+.vehicle.p4 {
+  animation-delay: 6s;
+  animation-duration: 20s;
+}
+@keyframes ride {
+  0% {
+    left: -115px;
+  }
+  /*  22% {bottom:3px;}
+      40% {bottom:14px;}
+      45% {bottom:12px;}*/
+  100% {
+    left: 100%;
+  }
+}

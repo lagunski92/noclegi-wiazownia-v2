@@ -1,0 +1,22 @@
+.location span {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 55px;
+    color: #971831;
+}
+
+.standart {
+    margin-top: 20px;
+}
+
+.icons {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}

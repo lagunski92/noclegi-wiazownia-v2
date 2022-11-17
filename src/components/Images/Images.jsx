@@ -59,16 +59,15 @@ const kitchen = [
   {
     id: 1,
     smallImage: Kitchen_1,
-    bigImage: Kitchen_1_big
+    bigImage: Kitchen_1_big,
   },
   { id: 2, smallImage: Kitchen_2, bigImage: Kitchen_2_big },
   {
     id: 3,
     smallImage: Kitchen_3,
-    bigImage: Kitchen_3_big
-
+    bigImage: Kitchen_3_big,
   },
-  { id: 4, smallImage: Kitchen_4, bigImage: Kitchen_4_big }
+  { id: 4, smallImage: Kitchen_4, bigImage: Kitchen_4_big },
 ];
 
 export const Images = () => {
@@ -76,58 +75,60 @@ export const Images = () => {
     {
       id: 1,
       smallImage: Room_1,
-      bigImage: Room_1_big
+      bigImage: Room_1_big,
     },
     {
       id: 2,
       smallImage: Room_2,
-      bigImage: Room_2_big
+      bigImage: Room_2_big,
     },
     {
       id: 3,
       smallImage: Room_3,
-      bigImage: Room_3_big
+      bigImage: Room_3_big,
     },
     {
       id: 4,
       smallImage: Room_4,
-      bigImage: Room_4_big
+      bigImage: Room_4_big,
     },
     {
       id: 5,
       smallImage: Room_5,
-      bigImage: Room_5_big
+      bigImage: Room_5_big,
     },
     {
       id: 6,
       smallImage: Room_6,
-      bigImage: Room_6_big
+      bigImage: Room_6_big,
     },
     {
       id: 7,
       smallImage: Room_7,
-      bigImage: Room_7_big
+      bigImage: Room_7_big,
     },
     {
       id: 8,
       smallImage: Room_8,
-      bigImage: Room_8_big
-    }
+      bigImage: Room_8_big,
+    },
   ];
-
 
   const bathroom = [
     { id: 1, smallImage: Bathroom_1, bigImage: Bathroom_1_big },
     { id: 2, smallImage: Bathroom_2, bigImage: Bathroom_2_big },
     { id: 3, smallImage: Bathroom_3, bigImage: Bathroom_3_big },
-    { id: 4, smallImage: Bathroom_4, bigImage: Bathroom_4_big }
+    { id: 4, smallImage: Bathroom_4, bigImage: Bathroom_4_big },
   ];
-  const building = [{ id: 1, smallImage: Building_1, bigImage: Building_1_big }, {
-    id: 2,
-    smallImage: Building_2,
-    bigImage: Building_2_big
-
-  }, { id: 3, smallImage: Building_3, bigImage: Building_3_big }];
+  const building = [
+    { id: 1, smallImage: Building_1, bigImage: Building_1_big },
+    {
+      id: 2,
+      smallImage: Building_2,
+      bigImage: Building_2_big,
+    },
+    { id: 3, smallImage: Building_3, bigImage: Building_3_big },
+  ];
 
   const [photoIndex, setPhotoIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
@@ -163,8 +164,12 @@ export const Images = () => {
       </div>
       <div className="flex flex-wrap rooms">
         {kitchen.map((el, index, array) => (
-          <img key={el.id} src={el.smallImage} alt="kitchen"
-               onClick={() => onClickHandler(array)} />
+          <img
+            key={el.id}
+            src={el.smallImage}
+            alt="kitchen"
+            onClick={() => onClickHandler(array)}
+          />
         ))}
       </div>
 
@@ -173,8 +178,12 @@ export const Images = () => {
       </div>
       <div className="flex flex-wrap rooms">
         {bathroom.map((el, index, array) => (
-          <img key={el.id} src={el.smallImage} alt="bathroom"
-               onClick={() => onClickHandler(array)} />
+          <img
+            key={el.id}
+            src={el.smallImage}
+            alt="bathroom"
+            onClick={() => onClickHandler(array)}
+          />
         ))}
       </div>
 
@@ -183,19 +192,31 @@ export const Images = () => {
       </div>
       <div className="flex flex-wrap rooms">
         {bathroom.map((el, index, array) => (
-          <img key={el.id} src={el.smallImage} alt="laundry"
-               onClick={() => onClickHandler(array)} />
+          <img
+            key={el.id}
+            src={el.smallImage}
+            alt="laundry"
+            onClick={() => onClickHandler(array)}
+          />
         ))}
       </div>
 
       <div className="building test">
-        <img src={Building} alt="building" /><span>Budynek</span>
+        <img src={Building} alt="building" />
+        <span>Budynek</span>
       </div>
       <div className="flex flex-wrap rooms">
         {building.map((el, index, array) => (
-          <img key={el.id} src={el.smallImage} alt="building"
-               onClick={() => onClickHandler(array)} />
+          <img
+            key={el.id}
+            src={el.smallImage}
+            alt="building"
+            onClick={() => onClickHandler(array)}
+          />
         ))}
+      </div>
+      <div className="main-title mt-16">
+        <h3>Kontakt</h3>
       </div>
 
       {isOpen && (
@@ -203,7 +224,9 @@ export const Images = () => {
           mainSrc={data[photoIndex].bigImage.toString()}
           onCloseRequest={() => setIsOpen(false)}
           nextSrc={data[(photoIndex + 1) % data.length].bigImage.toString()}
-          prevSrc={data[(photoIndex + data.length - 1) % data.length].bigImage.toString()}
+          prevSrc={data[
+            (photoIndex + data.length - 1) % data.length
+          ].bigImage.toString()}
           onMovePrevRequest={() =>
             setPhotoIndex((photoIndex + data.length - 1) % data.length)
           }
