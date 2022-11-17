@@ -15,6 +15,14 @@ h1 {
     margin-top: 20px;
 }
 
+.standart p{
+    margin-left: 50px;
+}
+
+.maps img{
+    margin-left: 20px;
+}
+
 .icons {
     font-weight: 600;
     font-size: 24px;

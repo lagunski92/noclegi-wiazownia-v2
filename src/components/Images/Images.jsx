@@ -215,7 +215,7 @@ export const Images = () => {
           />
         ))}
       </div>
-      <div className="main-title mt-16">
+      <div className="main-title mt-16 ml-20">
         <h3>Kontakt</h3>
       </div>
 

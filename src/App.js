@@ -1,8 +1,10 @@
 import React from "react";
 import {Header} from "./components/Header/Header";
-import {Galeria} from "./pages/Galeria";
+import {Gallery} from "./pages/Gallery";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import {MainPage} from "./pages/MainPage";
+import {Kontakt} from "./pages/Kontakt";
+import {Footer} from "./components/Footer/Footer";
 
 function App() {
     return (
@@ -10,10 +12,11 @@ function App() {
             <BrowserRouter>
                 <Header/>
                 <Routes>
-                    <Route exact path="/galeria" element={<Galeria/>}/>
-                    <Route path="/kontakt" element={<h2>in progress</h2>}/>
+                    <Route exact path="/galeria" element={<Gallery/>}/>
+                    <Route path="/kontakt" element={<Kontakt />}/>
                     <Route path="/" element={<MainPage />}/>
                 </Routes>
+                <Footer />
             </BrowserRouter>
         </div>
     );

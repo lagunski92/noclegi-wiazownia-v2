@@ -8,7 +8,6 @@ const location = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2447.191
 
 
 export const About = () => {
-  const icons = [Sprzatanie, Standart, Mapa2];
   return (
     <div className="rooms-wrapper">
       <div className="main-title">
@@ -47,19 +46,19 @@ export const About = () => {
       <div className="flex justify-center gap-56 ">
         <div className="icons">
           <img src={Sprzatanie} alt="sprzątanie" />
-          <p style={{ textAlign: "center", width: 200 }}>Regularne sprzątanie</p>
+          <p style={{ textAlign: "center", width: 200, marginTop: 10 }}>Regularne sprzątanie</p>
           <p style={{ textAlign: "center", width: 200, fontSize: 16, fontWeight: 400 }}>Lorem ipsum dolor sit amet,
             consectetur adipisicing elit. Adipisci consequuntur dignissimos. </p>
         </div>
         <div className="standart icons">
           <img src={Standart} alt="standart" />
-          <p style={{ textAlign: "center", width: 250 }}>Wysoki standart pokoi</p>
-          <p style={{ textAlign: "center", width: 300, fontSize: 16, fontWeight: 400 }}>Lorem ipsum dolor sit amet,
+          <p style={{ textAlign: "center", width: 200, marginTop: 10 }}>Wysoki standart pokoi</p>
+          <p style={{ textAlign: "center", width: 200, fontSize: 16, fontWeight: 400 }}>Lorem ipsum dolor sit amet,
             consectetur adipisicing elit. Adipisci consequuntur dignissimos. </p>
         </div>
-        <div className="icons">
+        <div className="icons maps">
           <img src={Mapa2} alt="mapa" />
-          <p style={{ textAlign: "center", width: 200 }}>Świetna lokalizacja</p>
+          <p style={{ textAlign: "center", width: 200, marginTop: 10 }}>Świetna lokalizacja</p>
           <p style={{ textAlign: "center", width: 200, fontSize: 16, fontWeight: 400 }}>Lorem ipsum dolor sit amet,
             consectetur adipisicing elit. Adipisci consequuntur dignissimos. </p>
         </div>

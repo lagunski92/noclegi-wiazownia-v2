@@ -1,0 +1,45 @@
+.kontakt li{
+    position: relative;
+    height: 50px;
+    list-style: none;
+    padding-left: 43px;
+    width: 400px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2;
+}
+
+.kontakt ul {
+    flex-wrap: nowrap;
+    margin-bottom: 77px;
+    margin-top: 62px;
+    margin-right: 130px;
+}
+
+
+.kontakt .tel:before {
+    position: absolute;
+    margin: 3px 0 0 -28px;
+    content: url("./../assets/icons/Phone.png");
+}
+.kontakt .mail:before {
+    position: absolute;
+    margin: 4px 0 0 -40px;
+    content: url("./../assets/icons/Mail_icon.png");
+}.kontakt .city:before {
+    position: absolute;
+    margin: 0 0 0 -38px;
+    content: url("./../assets/icons/Location_icon.png");
+}.kontakt .fb:before {
+    position: absolute;
+    margin: 2px 0 0 -38px;
+    content: url("./../assets/icons/Facebook_icon.png");
+}.kontakt .yotube:before {
+    position: absolute;
+    margin: 3px 0 0 -38px;
+    content: url("./../assets/icons/Youtube_icon.png");
+}.kontakt .google-map:before {
+    position: absolute;
+    margin: 0 0 0 -40px;
+    content: url("./../assets/icons/Map_icon.png");
+}

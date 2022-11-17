@@ -1,18 +1,4 @@
-/*.kontakt-wrapper {
-    overflow: hidden !important;
-    background-image: url("./../../assets/images/Tlo_kontakt.png");
-    height: 562px;
-    width: 100%;
-    background-position: bottom left;
-}
-
-.kontakt-links img {
-    height: 100%;
-    z-index: -100;
-
-}*/
-
-#footer {
+.footer {
   position: relative;
   width: 100%;
   min-height: 562px;
@@ -49,9 +35,6 @@
   0% {
     left: -115px;
   }
-  /*  22% {bottom:3px;}
-      40% {bottom:14px;}
-      45% {bottom:12px;}*/
   100% {
     left: 100%;
   }
