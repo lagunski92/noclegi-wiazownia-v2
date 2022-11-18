@@ -1,3 +1,8 @@
+.images-wrapper img:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 .images-title h3 {
   color: black;
   font-size: 32px;
@@ -5,7 +10,7 @@
   line-height: 39px;
   text-decoration: underline #971831;
   text-decoration-thickness: 8px;
-  margin-top: 86vh;
+  margin-top: 21px;
   margin-left: 30px;
   margin-bottom: 0;
 }

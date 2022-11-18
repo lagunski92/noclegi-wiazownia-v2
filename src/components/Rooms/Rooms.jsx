@@ -66,7 +66,7 @@ export const Rooms = () => {
                             }
                     }
                 >
-                    <img src={image === Room_4 ? UsersWhite : Users} alt="users"/>{" "}
+                    <img src={image === Room_4 ? UsersWhite : Users} width="1140px" alt="users"/>{" "}
                     <span>4 osobowe</span>
                 </div>
                 <div

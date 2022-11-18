@@ -134,13 +134,16 @@ export const Images = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [data, setData] = useState([]);
 
-  const onClickHandler = (array) => {
+  const onClickHandler = (index, array) => {
+    setPhotoIndex(index);
     setData(array);
     setIsOpen(true);
   };
 
+  console.log(photoIndex);
+
   return (
-    <>
+    <div className="images-wrapper">
       <div className="images-title">
         <h3>Galeria</h3>
       </div>
@@ -154,7 +157,7 @@ export const Images = () => {
             key={el.id}
             src={el.smallImage}
             alt="room"
-            onClick={() => onClickHandler(array)}
+            onClick={() => onClickHandler(index, array)}
           />
         ))}
       </div>
@@ -168,7 +171,7 @@ export const Images = () => {
             key={el.id}
             src={el.smallImage}
             alt="kitchen"
-            onClick={() => onClickHandler(array)}
+            onClick={() => onClickHandler(index, array)}
           />
         ))}
       </div>
@@ -182,7 +185,7 @@ export const Images = () => {
             key={el.id}
             src={el.smallImage}
             alt="bathroom"
-            onClick={() => onClickHandler(array)}
+            onClick={() => onClickHandler(index, array)}
           />
         ))}
       </div>
@@ -196,7 +199,7 @@ export const Images = () => {
             key={el.id}
             src={el.smallImage}
             alt="laundry"
-            onClick={() => onClickHandler(array)}
+            onClick={() => onClickHandler(index, array)}
           />
         ))}
       </div>
@@ -211,14 +214,13 @@ export const Images = () => {
             key={el.id}
             src={el.smallImage}
             alt="building"
-            onClick={() => onClickHandler(array)}
+            onClick={() => onClickHandler(index, array)}
           />
         ))}
       </div>
       <div className="main-title mt-16 ml-20">
         <h3>Kontakt</h3>
       </div>
-
       {isOpen && (
         <Lightbox
           mainSrc={data[photoIndex].bigImage.toString()}
@@ -235,6 +237,6 @@ export const Images = () => {
           }}
         />
       )}
-    </>
+    </div>
   );
 };
