@@ -125,3 +125,120 @@
     left: 100%;
   }
 }
+
+
+
+@media (max-width: 920px) {
+  .vehicle {
+    animation-name: none;
+  }
+  .vehicle.p1 {
+    left: -60px;
+    width: 128px;
+    height: 64px;
+  }
+
+  .vehicle.p3{
+    left: 180px;
+    width: 93px;
+    height: 50px;
+  }
+
+  .kontakt-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .kontakt-links div {
+    font-size: 16px;
+    padding: 7px 7px 7px 7px;
+  }
+
+  .phone-mobile{
+    border-radius: 15px;
+    background-color: #971831;
+    width: 155px;
+    padding: 3px 25px 3px 35px;
+    color: white;
+    text-align: right;
+  }
+
+  .phone-mobile:before{
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    content: url("./../../assets/icons/Phone_white.png");
+    transform: scale(0.8);
+  }
+
+  .mail-mobile{
+    border-radius: 15px;
+    background-color: #971831;
+    width: 235px;
+    padding: 3px 35px 3px 40px;
+    color: white;
+    text-align: right;
+  }
+
+  .mail-mobile:before{
+    position: absolute;
+    left: 6px;
+    top: 40px;
+    content: url("./../../assets/icons/Mail_white.png");
+    transform: scale(0.8);
+  }
+
+  .map-mobile:before {
+    position: absolute;
+    top: 82px;
+    left: 10px;
+    content: url("./../../assets/icons/Map_white.png");
+    transform: scale(0.8);
+  }
+
+  .map-mobile {
+    border-radius: 15px;
+    background-color: #971831;
+    width: 175px;
+    padding: 3px 20px 3px 25px;
+    color: white;
+    text-align: right;
+  }
+
+  .facebook-mobile:before {
+    position: absolute;
+    top: 118px;
+    left: 10px;
+    content: url("./../../assets/icons/Facebook_white.png");
+    transform: scale(0.7);
+  }
+
+  .facebook-mobile {
+    border-radius: 15px;
+    background-color: #971831;
+    width: 163px;
+    padding: 3px 20px 3px 30px;
+    color: white;
+    text-align: right;
+  }
+
+  .youtube-mobile:before {
+    position: absolute;
+    top: 123px;
+    left: 180px;
+    content: url("./../../assets/icons/Youtube_white.png");
+    transform: scale(0.8);
+  }
+
+  .youtube-mobile {
+    border-radius: 15px;
+    background-color: #971831;
+    width: 145px;
+    padding: 3px 15px 3px 10px;
+    color: white;
+    text-align: right;
+  }
+
+
+}

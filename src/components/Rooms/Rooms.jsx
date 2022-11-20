@@ -21,9 +21,9 @@ export const Rooms = () => {
     return (
         <div className="rooms-wrapper">
             <div className="main-title">
-                <h3>Galeria</h3>
+                <h3>Pokoje</h3>
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center rooms-mobile flex-wrap">
                 <div
                     className="test users img"
                     onClick={() => setImage(Room_2)}
@@ -88,7 +88,7 @@ export const Rooms = () => {
             <div className="flex justify-center equipment">
                 <div className="border">
                     <img src={image.toString()} alt="building"/>
-                    <div className="flex justify-center media-wrapper">
+                    {/*<div className="flex justify-center media-wrapper">
                         <div className="media">
                             <div className="image2"><img src={Wymiary} alt="wymiary"/>
                             </div>
@@ -118,8 +118,8 @@ export const Rooms = () => {
                             </div>
                             <div className="content">Czajnik</div>
                         </div>
-                    </div>
-                    <div className="flex flex-row justify-center ml-32 mt-28 mb-40">
+                    </div>*/}
+                    <div className="mobile-description flex flex-row flex-wrap justify-center ml-32 mt-28 mb-40">
                         <div className="flex-col flex-1">
                             <span>POKÓJ</span>
                             <ul className="ml-11 mt-7">

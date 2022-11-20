@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "react-slideshow-image/dist/styles.css";
 import "./assets/config.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";

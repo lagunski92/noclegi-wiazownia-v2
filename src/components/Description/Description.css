@@ -25,4 +25,22 @@
     line-height: 20px;
 }
 
+.react-slideshow-container .default-nav:last-of-type, .default-nav:first-of-type {
+    fill: lightgray !important;
+}
+.react-slideshow-container .default-nav {
+    background: none !important;
+}
 
+.each-slide-effect {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 920px) {
+    .wrapper {
+        height: 220px;
+        background-image: none;
+        background-color: white;
+    }
+}

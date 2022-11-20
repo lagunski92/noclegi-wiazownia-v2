@@ -140,8 +140,6 @@ export const Images = () => {
     setIsOpen(true);
   };
 
-  console.log(photoIndex);
-
   return (
     <div className="images-wrapper">
       <div className="images-title">

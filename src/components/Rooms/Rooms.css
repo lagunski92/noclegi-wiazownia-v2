@@ -10,7 +10,6 @@
 
 .rooms-wrapper {
   margin-left: 47px;
-  margin-right: 47px;
   margin-top: 33px;
 }
 
@@ -76,4 +75,32 @@ ul {
 .shower {
   position: relative;
   right: 35px;
+}
+
+@media (max-width: 920px) {
+  .rooms-wrapper {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  li {
+    font-size: 15px;
+  }
+
+  .border span {
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  ul {
+    width: 242px;
+    margin-bottom: 20px;
+  }
+  .mobile-description {
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+
+  .rooms-mobile {
+    justify-content: space-between;
+  }
 }

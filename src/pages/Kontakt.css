@@ -1,49 +1,75 @@
-.kontakt li{
-    position: relative;
-    height: 50px;
-    list-style: none;
-    padding-left: 43px;
-    width: 471px;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 2;
+.kontakt li {
+  position: relative;
+  height: 50px;
+  list-style: none;
+  padding-left: 43px;
+  width: 471px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 2;
 }
 .kontakt a:hover {
-    text-decoration: underline #971831;
-    text-decoration-thickness: 2px;
+  text-decoration: underline #971831;
+  text-decoration-thickness: 2px;
 }
 
 .kontakt ul {
-    flex-wrap: nowrap;
-    margin-bottom: 77px;
-    margin-top: 40px;
-    margin-right: 200px;
+  flex-wrap: nowrap;
+  margin-bottom: 77px;
+  margin-top: 40px;
+  margin-right: 200px;
 }
-
 
 .kontakt .tel:before {
-    position: absolute;
-    margin: 3px 0 0 -28px;
-    content: url("./../assets/icons/Phone.png");
+  position: absolute;
+  margin: 3px 0 0 -28px;
+  content: url("./../assets/icons/Phone.png");
 }
 .kontakt .mail:before {
-    position: absolute;
-    margin: 4px 0 0 -40px;
-    content: url("./../assets/icons/Mail_icon.png");
-}.kontakt .city:before {
-    position: absolute;
-    margin: 0 0 0 -38px;
-    content: url("./../assets/icons/Location_icon.png");
-}.kontakt .fb:before {
-    position: absolute;
-    margin: 2px 0 0 -38px;
-    content: url("./../assets/icons/Facebook_icon.png");
-}.kontakt .yotube:before {
-    position: absolute;
-    margin: 3px 0 0 -38px;
-    content: url("./../assets/icons/Youtube_icon.png");
-}.kontakt .google-map:before {
-    position: absolute;
-    margin: 0 0 0 -40px;
-    content: url("./../assets/icons/Map_icon.png");
+  position: absolute;
+  margin: 4px 0 0 -40px;
+  content: url("./../assets/icons/Mail_icon.png");
+}
+.kontakt .city:before {
+  position: absolute;
+  margin: 0 0 0 -38px;
+  content: url("./../assets/icons/Location_icon.png");
+}
+.kontakt .fb:before {
+  position: absolute;
+  margin: 2px 0 0 -38px;
+  content: url("./../assets/icons/Facebook_icon.png");
+}
+.kontakt .yotube:before {
+  position: absolute;
+  margin: 3px 0 0 -38px;
+  content: url("./../assets/icons/Youtube_icon.png");
+}
+.kontakt .google-map:before {
+  position: absolute;
+  margin: 0 0 0 -40px;
+  content: url("./../assets/icons/Map_icon.png");
+}
+
+@media (max-width: 920px) {
+  .kontakt {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    margin-left: 0 !important;
+    margin-right: 0;
+  }
+  .kontakt li {
+    font-size: 16px;
+    width: 375px;
+  }
+
+  .iframe-mobile {
+    margin-top: 0;
+  }
+
+  .kontakt-mobile {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
