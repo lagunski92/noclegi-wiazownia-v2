@@ -22,14 +22,26 @@ export const Header = () => {
 
   return (
     <div
-      className={`${isMobile ? "" : `${isGalleryPage ? "header-wrapper-gallery" : "header-wrapper"}`}`}>
-      <div className="nav">
+      className={`${
+        isMobile
+          ? ""
+          : `${isGalleryPage ? "header-wrapper-gallery" : "header-wrapper"}`
+      }`}
+    >
+      <div
+        className="nav"
+        style={
+          isGalleryPage || isMobile
+            ? { backgroundColor: "white" }
+            : { backgroundColor: "transparent" }
+        }
+      >
         <NavLink to="">
-          <img src={SuperNocleg} alt="super-nocleg"
-               className="nocleg" />
+          <img src={SuperNocleg} alt="super-nocleg" className="nocleg" />
         </NavLink>
-        {isMobile ? <HamburgerMenu /> :
-
+        {isMobile ? (
+          <HamburgerMenu />
+        ) : (
           <div className="links">
             <div>
               <NavLink
@@ -38,9 +50,9 @@ export const Header = () => {
                 style={({ isActive }) =>
                   isActive
                     ? {
-                      textDecoration: "underline #971831",
-                      textDecorationThickness: "4px"
-                    }
+                        textDecoration: "underline #971831",
+                        textDecorationThickness: "4px",
+                      }
                     : { textDecoration: "" }
                 }
               >
@@ -52,9 +64,9 @@ export const Header = () => {
                 style={({ isActive }) =>
                   isActive
                     ? {
-                      textDecoration: "underline #971831",
-                      textDecorationThickness: "4px"
-                    }
+                        textDecoration: "underline #971831",
+                        textDecorationThickness: "4px",
+                      }
                     : { textDecoration: "" }
                 }
               >
@@ -79,63 +91,81 @@ export const Header = () => {
               {" "}
               <img src={Facebook} alt="facebook" />{" "}
             </a>
-          </div>}
+          </div>
+        )}
       </div>
 
       <div
-        className={`${!isMobile ? "" : `${isGalleryPage ? "header-wrapper-gallery" : "header-wrapper"}`}`}
-        style={{ margin: "0px" }}>
-        {(isGalleryPage && isMobile) &&
+        className={`${
+          !isMobile
+            ? ""
+            : `${isGalleryPage ? "header-wrapper-gallery" : "header-wrapper"}`
+        }`}
+        style={{ margin: "0px" }}
+      >
+        {isGalleryPage && isMobile && (
           <div className="block mobile-gallery relative top-24">
-            <div className="title"
-                 style={{ background: "transparent" }}>
-              <h2>
-                Pokoje w Wiązownie
-              </h2>
+            <div className="title" style={{ background: "transparent" }}>
+              <h2>Pokoje w Wiązownie</h2>
               <h3>K. Warszawy</h3>
             </div>
-            {!isKontaktPage &&
+            {!isKontaktPage && (
               <div className="inline-flex mb-20">
                 <div className={isMainPage ? "mainContact" : "contact"}>
-                  <img src={isMainPage ? WhitePhone : Phone} alt="phone"
-                       className="phone-icon" />
+                  <img
+                    src={isMainPage ? WhitePhone : Phone}
+                    alt="phone"
+                    className="phone-icon"
+                  />
                   <p>667 433 777</p>
                 </div>
 
                 <div className={isMainPage ? "mainPageMap" : "map"}>
-                  <img src={isMainPage ? RedMap : Map} alt="map"
-                       className="map-icon" />
+                  <img
+                    src={isMainPage ? RedMap : Map}
+                    alt="map"
+                    className="map-icon"
+                  />
                   <a href={linkLocation} target="_blank" rel="noreferrer">
                     Wyznacz trasę
                   </a>
                 </div>
-              </div>}
-          </div>}
+              </div>
+            )}
+          </div>
+        )}
       </div>
-      {(!isMobile && !isKontaktPage) && <div className="block mobile">
-        <div className={isMainPage || isKontaktPage ? "mainTitle" : "title"}>
-          <h2>
-            Pokoje w Wiązownie
-          </h2>
-          <h3>K. Warszawy</h3>
-        </div>
-        {!isKontaktPage &&
-          <div className="inline-flex mb-20">
-            <div className={isMainPage ? "mainContact" : "contact"}>
-              <img src={isMainPage ? WhitePhone : Phone} alt="phone"
-                   className="phone-icon" />
-              <p>667 433 777</p>
-            </div>
+      {!isMobile && !isKontaktPage && (
+        <div className="block mobile">
+          <div className={isMainPage || isKontaktPage ? "mainTitle" : "title"}>
+            <h2>Pokoje w Wiązownie</h2>
+            <h3>K. Warszawy</h3>
+          </div>
+          {!isKontaktPage && (
+            <div className="inline-flex mb-20">
+              <div className={isMainPage ? "mainContact" : "contact"}>
+                <img
+                  src={isMainPage ? WhitePhone : Phone}
+                  alt="phone"
+                  className="phone-icon"
+                />
+                <p>667 433 777</p>
+              </div>
 
-            <div className={isMainPage ? "mainPageMap" : "map"}>
-              <img src={isMainPage ? RedMap : Map} alt="map"
-                   className="map-icon" />
-              <a href={linkLocation} target="_blank" rel="noreferrer">
-                Wyznacz trasę
-              </a>
+              <div className={isMainPage ? "mainPageMap" : "map"}>
+                <img
+                  src={isMainPage ? RedMap : Map}
+                  alt="map"
+                  className="map-icon"
+                />
+                <a href={linkLocation} target="_blank" rel="noreferrer">
+                  Wyznacz trasę
+                </a>
+              </div>
             </div>
-          </div>}
-      </div>}
+          )}
+        </div>
+      )}
     </div>
   );
 };

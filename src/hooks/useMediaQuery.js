@@ -11,7 +11,7 @@ const useMediaQuery = (query) => {
         mediaQuery.addEventListener('change', handler);
 
         return () => mediaQuery.removeEventListener('change', handler);
-    }, []);
+    }, [mediaQuery]);
 
     return match;
 };

@@ -118,7 +118,7 @@ ul {
   }
 
   .rooms-mobile {
-    justify-content: space-between;
+    justify-content: center;
     margin-left: -10px;
     min-width: 340px;
   }
