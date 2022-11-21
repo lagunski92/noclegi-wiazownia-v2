@@ -288,4 +288,20 @@
         width: 100%;
         background-color: white;
     }
+
+    .mobile-gallery {
+        background: none;
+    }
+    .mobile-gallery-title {
+
+    }
+
+    .header-wrapper-gallery {
+        background: url("./../../assets/icons/Banner.png") no-repeat center 60px;
+        -webkit-background-size: 100% auto;
+        -moz-background-size: 100% auto;
+        -o-background-size: 100% auto;
+        background-size: 100% auto;
+        height: 285px;
+    }
 }

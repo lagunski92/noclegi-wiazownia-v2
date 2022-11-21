@@ -54,23 +54,13 @@ import Building_3 from "./../../assets/images/Building3_small.png";
 import Building_1_big from "./../../assets/images/Building1_big.png";
 import Building_2_big from "./../../assets/images/Building2_big.png";
 import Building_3_big from "./../../assets/images/Building3_big.png";
+import { Slide } from "react-slideshow-image";
+import useMediaQuery from "../../hooks/useMediaQuery";
 
-const kitchen = [
-  {
-    id: 1,
-    smallImage: Kitchen_1,
-    bigImage: Kitchen_1_big,
-  },
-  { id: 2, smallImage: Kitchen_2, bigImage: Kitchen_2_big },
-  {
-    id: 3,
-    smallImage: Kitchen_3,
-    bigImage: Kitchen_3_big,
-  },
-  { id: 4, smallImage: Kitchen_4, bigImage: Kitchen_4_big },
-];
 
 export const Images = () => {
+  const isMobile = useMediaQuery("(max-width: 820px)");
+
   const rooms = [
     {
       id: 1,
@@ -115,10 +105,10 @@ export const Images = () => {
   ];
 
   const bathroom = [
+    { id: 4, smallImage: Bathroom_4, bigImage: Bathroom_4_big },
     { id: 1, smallImage: Bathroom_1, bigImage: Bathroom_1_big },
     { id: 2, smallImage: Bathroom_2, bigImage: Bathroom_2_big },
-    { id: 3, smallImage: Bathroom_3, bigImage: Bathroom_3_big },
-    { id: 4, smallImage: Bathroom_4, bigImage: Bathroom_4_big },
+    { id: 3, smallImage: Bathroom_3, bigImage: Bathroom_3_big }
   ];
   const building = [
     { id: 1, smallImage: Building_1, bigImage: Building_1_big },
@@ -128,6 +118,21 @@ export const Images = () => {
       bigImage: Building_2_big,
     },
     { id: 3, smallImage: Building_3, bigImage: Building_3_big },
+  ];
+
+  const kitchen = [
+    {
+      id: 1,
+      smallImage: Kitchen_1,
+      bigImage: Kitchen_1_big,
+    },
+    { id: 2, smallImage: Kitchen_2, bigImage: Kitchen_2_big },
+    {
+      id: 3,
+      smallImage: Kitchen_3,
+      bigImage: Kitchen_3_big,
+    },
+    { id: 4, smallImage: Kitchen_4, bigImage: Kitchen_4_big },
   ];
 
   const [photoIndex, setPhotoIndex] = useState(0);
@@ -146,79 +151,144 @@ export const Images = () => {
         <h3>Galeria</h3>
       </div>
 
-      <div className="test users">
+      <div className="test users" style={{margin: "20px 0 20px 25px"}}>
         <img src={Users} alt="users" /> <span>Pokoje</span>
       </div>
-      <div className="flex flex-wrap rooms">
+      {!isMobile ? <div className="flex flex-wrap rooms">
         {rooms.map((el, index, array) => (
           <img
-            key={el.id}
+            key={index}
             src={el.smallImage}
             alt="room"
             onClick={() => onClickHandler(index, array)}
           />
         ))}
-      </div>
+      </div>:
+      <Slide autoplay={false}>
+        {rooms.map((el, index, array) => (
+          <div className="each-slide-effect">
+            <img
+              key={index}
+              src={el.smallImage}
+              alt="room"
+              onClick={() => onClickHandler(index, array)}
+            />
+          </div>
+        ))}
 
-      <div className="test kitchen">
+      </Slide>}
+
+      <div className="test kitchen" style={{margin: "20px 0 20px 25px"}}>
         <img src={Kitchen} alt="kitchen" /> <span>Kuchnie</span>
       </div>
-      <div className="flex flex-wrap rooms">
+      {!isMobile ? <div className="flex flex-wrap rooms">
         {kitchen.map((el, index, array) => (
           <img
-            key={el.id}
+            key={index}
             src={el.smallImage}
             alt="kitchen"
             onClick={() => onClickHandler(index, array)}
           />
         ))}
-      </div>
+      </div>:
+      <Slide autoplay={false}>
+        {kitchen.map((el, index, array) => (
+          <div className="each-slide-effect">
+            <img
+              key={index}
+              src={el.smallImage}
+              alt="kitchen"
+              onClick={() => onClickHandler(index, array)}
+            />
+          </div>
+        ))}
 
-      <div className="test bathroom">
+      </Slide>}
+
+
+      <div className="test bathroom" style={{margin: "20px 0 20px 25px"}}>
         <img src={Bathroom} alt="bathroom" /> <span>Łazienki</span>
       </div>
-      <div className="flex flex-wrap rooms">
-        {bathroom.map((el, index, array) => (
-          <img
-            key={el.id}
-            src={el.smallImage}
-            alt="bathroom"
-            onClick={() => onClickHandler(index, array)}
-          />
-        ))}
-      </div>
+      {!isMobile? <div className="flex flex-wrap rooms">
+          {bathroom.map((el, index, array) => (
+            <img
+              key={index}
+              src={el.smallImage}
+              alt="laundry"
+              onClick={() => onClickHandler(index, array)}
+            />
+          ))}
+        </div>:
+        <Slide autoplay={false}>
+          {bathroom.map((el, index, array) => (
+            <div className="each-slide-effect">
+              <img
+                key={index}
+                src={el.smallImage}
+                alt="laundry"
+                onClick={() => onClickHandler(index, array)}
+              />
+            </div>
+          ))}
 
-      <div className="test laundry">
+        </Slide>}
+
+
+      <div className="test laundry" style={{margin: "20px 0 20px 25px"}}>
         <img src={Laundry} alt="laundry" /> <span>Pralnia</span>
       </div>
-      <div className="flex flex-wrap rooms">
+      {!isMobile? <div className="flex flex-wrap rooms">
         {bathroom.map((el, index, array) => (
           <img
-            key={el.id}
+            key={index}
             src={el.smallImage}
             alt="laundry"
             onClick={() => onClickHandler(index, array)}
           />
         ))}
-      </div>
+      </div>:
+      <Slide autoplay={false}>
+        {bathroom.map((el, index, array) => (
+          <div className="each-slide-effect">
+            <img
+              key={index}
+              src={el.smallImage}
+              alt="laundry"
+              onClick={() => onClickHandler(index, array)}
+            />
+          </div>
+        ))}
 
-      <div className="building test">
+      </Slide>}
+
+      <div className="building test" style={{margin: "20px 0 20px 25px"}}>
         <img src={Building} alt="building" />
         <span>Budynek</span>
       </div>
-      <div className="flex flex-wrap rooms">
+      {!isMobile ? <div className="flex flex-wrap rooms">
         {building.map((el, index, array) => (
           <img
-            key={el.id}
+            key={index}
             src={el.smallImage}
             alt="building"
             onClick={() => onClickHandler(index, array)}
           />
         ))}
-      </div>
-      <div className="main-title mt-16 ml-20">
-        <h3>Kontakt</h3>
-      </div>
+      </div>:
+      <Slide autoplay={false}>
+        {building.map((el, index, array) => (
+          <div className="each-slide-effect">
+          <img
+            key={index}
+            src={el.smallImage}
+            alt="building"
+            onClick={() => onClickHandler(index, array)}
+          />
+          </div>
+        ))}
+
+      </Slide>}
+
       {isOpen && (
         <Lightbox
           mainSrc={data[photoIndex].bigImage.toString()}

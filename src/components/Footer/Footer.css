@@ -130,18 +130,7 @@
 
 @media (max-width: 920px) {
   .vehicle {
-    animation-name: none;
-  }
-  .vehicle.p1 {
-    left: -60px;
-    width: 128px;
-    height: 64px;
-  }
-
-  .vehicle.p3{
-    left: 180px;
-    width: 93px;
-    height: 50px;
+    display: none;
   }
 
   .kontakt-links{
@@ -166,8 +155,8 @@
 
   .phone-mobile:before{
     position: absolute;
-    left: 10px;
-    top: 7px;
+    left: 20px;
+    top: 25px;
     content: url("./../../assets/icons/Phone_white.png");
     transform: scale(0.8);
   }
@@ -175,7 +164,7 @@
   .mail-mobile{
     border-radius: 15px;
     background-color: #971831;
-    width: 235px;
+    width: 260px;
     padding: 3px 35px 3px 40px;
     color: white;
     text-align: right;
@@ -183,16 +172,16 @@
 
   .mail-mobile:before{
     position: absolute;
-    left: 6px;
-    top: 40px;
+    left: 16px;
+    top: 58px;
     content: url("./../../assets/icons/Mail_white.png");
     transform: scale(0.8);
   }
 
   .map-mobile:before {
     position: absolute;
-    top: 82px;
-    left: 10px;
+    top: 100px;
+    left: 20px;
     content: url("./../../assets/icons/Map_white.png");
     transform: scale(0.8);
   }
@@ -208,8 +197,8 @@
 
   .facebook-mobile:before {
     position: absolute;
-    top: 118px;
-    left: 10px;
+    top: 136px;
+    left: 20px;
     content: url("./../../assets/icons/Facebook_white.png");
     transform: scale(0.7);
   }
@@ -225,8 +214,8 @@
 
   .youtube-mobile:before {
     position: absolute;
-    top: 123px;
-    left: 180px;
+    top: 141px;
+    left: 190px;
     content: url("./../../assets/icons/Youtube_white.png");
     transform: scale(0.8);
   }
@@ -240,5 +229,7 @@
     text-align: right;
   }
 
-
+  .footer {
+    background-image: url("./../../assets/images/Tlo_footer_mobile.png") !important;
+  }
 }

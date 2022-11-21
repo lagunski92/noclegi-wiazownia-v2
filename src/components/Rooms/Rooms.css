@@ -5,12 +5,14 @@
   line-height: 39px;
   text-decoration: underline #971831;
   text-decoration-thickness: 8px;
-  margin-bottom: 0;
+  text-underline-offset: 6px;
+  margin-bottom: 5px;
 }
 
 .rooms-wrapper {
   margin-left: 47px;
   margin-top: 33px;
+  overflow: hidden;
 }
 
 .img {
@@ -77,6 +79,21 @@ ul {
   right: 35px;
 }
 
+.equipment-wrapper ul {
+  display: flex;
+  min-width: 100%;
+  justify-content: space-around;
+  margin: 100px 15px 0 0;
+}
+.equipment-wrapper li {
+  display: flex;
+  justify-content: center;
+}
+
+.equipment-wrapper p {
+  margin-right: 10px;
+}
+
 @media (max-width: 920px) {
   .rooms-wrapper {
     margin-left: 24px;
@@ -102,5 +119,16 @@ ul {
 
   .rooms-mobile {
     justify-content: space-between;
+    margin-left: -10px;
+    min-width: 340px;
+  }
+
+  .main-title h3 {
+    text-decoration-thickness: 4px;
+  }
+
+  .equipment-wrapper ul {
+    flex-wrap: wrap;
+    margin-top: 10px;
   }
 }

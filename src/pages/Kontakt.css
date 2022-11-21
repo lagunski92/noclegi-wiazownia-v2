@@ -64,12 +64,20 @@
     width: 375px;
   }
 
+  .kontakt ul{
+    margin-left: 20px;
+  }
+
   .iframe-mobile {
     margin-top: 0;
   }
 
   .kontakt-mobile {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .mobile-title h3{
+    margin-left: 20px;
   }
 }

@@ -1,14 +1,12 @@
 import React from "react";
 import "./Kontakt.css"
-import useMediaQuery from "./../hooks/useMediaQuery";
 
 const location = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2447.1935208942677!2d21.285948916040397!3d52.167174870068514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ed5ebb1a6942f%3A0x7743f6004419ee09!2sSuperNocleg%20-%20kwatera%20pracownicza!5e0!3m2!1spl!2spl!4v1668771387911!5m2!1spl!2spl"
 
 export const Kontakt = () => {
-    const isMobile = useMediaQuery('(max-width: 820px)');
     return (
-        <div className="kontakt-mobile ml-16 mr-16 mb-6" style={{overflow: "hidden"}}>
-            <div className="main-title">
+        <div className="kontakt-mobile ml-12 mr-16 mt-6 mb-6" style={{overflow: "hidden"}}>
+            <div className="main-title mobile-title">
                 <h3>Kontakt</h3>
             </div>
             <div className="kontakt flex flex-row justify-center">

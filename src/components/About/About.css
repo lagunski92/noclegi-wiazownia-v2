@@ -34,13 +34,9 @@ h1 {
     left: 75px;
 }
 
-
-
 @media (max-width: 920px) {
     .iframe-about iframe {
-        max-width: 375px;
-        margin-right: 5px;
-        margin-left: -25px;
+        min-width: 360px;
     }
     h1 {
         font-size: 24px;
@@ -61,7 +57,6 @@ h1 {
         margin-bottom: 50px;
     }
     .main-title {
-        margin-bottom: 20px;
     }
     .standart {
         width: 157px;

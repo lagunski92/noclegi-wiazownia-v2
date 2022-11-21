@@ -5,7 +5,7 @@ import { slide as Menu } from "react-burger-menu";
 import "./HamburgerMenu.css";
 import Facebook from "../../assets/icons/Facebook.png";
 import Youtube from "../../assets/icons/Youtube.png";
-import { useOnClickOutside } from "./../../hooks/useOnClickOutside";
+import { useOnClickOutside } from "../../hooks/useOnClickOutside";
 
 export const HamburgerMenu = () => {
   const [isOpen, setOpen] = useState(false);
@@ -21,9 +21,6 @@ export const HamburgerMenu = () => {
   useOnClickOutside(ref, () => setOpen(false));
   return (
     <Menu right isOpen={isOpen} onOpen={handleIsOpen} onClose={handleIsOpen}>
-      <NavLink to="" id="home" className="menu-item" onClick={closeSideBar}>
-        Home
-      </NavLink>
       <NavLink
         to="galeria"
         id="home"
@@ -40,21 +37,23 @@ export const HamburgerMenu = () => {
       >
         Kontakt
       </NavLink>
-      <a
+        <a
         href="https://www.youtube.com/channel/UC_qzc9J4BGW2B3PF6sXNgUw"
         target="_blank"
         rel="noreferrer"
         style={{ color: "#971831" }}
       >
-        Youtube
+         Youtube
+        <img src={Youtube} alt="youtube" style={{position: "relative", top: -29}}/>
       </a>
       <a
         href="https://www.facebook.com/SuperNocleg"
         target="_blank"
         rel="noreferrer"
-        style={{ color: "#971831" }}
+        style={{ color: "#971831", position: "relative", top: -24 }}
       >
         Facebook
+        <img src={Facebook} alt="youtube" style={{position: "relative", top: -30}}/>
       </a>
       <div ref={ref} />
     </Menu>

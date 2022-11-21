@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Slide } from "react-slideshow-image";
 import "./Description.css";
 import useMediaQuery from "./../../hooks/useMediaQuery";
@@ -42,7 +42,7 @@ export const Description = () => {
                             }}
                         >
                             <p>
-                                <b>W pobliżu:</b> <br />
+                                <b>Pokoje:</b> <br />
                                 Wysoki poziom wyposażenia, oddzielna łazienka, telewizor i wygodne,
                                 pojedyncze łóżka
                             </p>
@@ -78,7 +78,7 @@ export const Description = () => {
             </div>
             <div className="description">
             <span>
-            <b>W pobliżu:</b> <br />
+            <b>Pokoje:</b> <br />
             Wysoki poziom wyposażenia, oddzielna łazienka, telewizor i wygodne,
             pojedyncze łóżka
             </span>
