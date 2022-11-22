@@ -12,6 +12,7 @@
 .kontakt-links {
   display: flex;
   justify-content: center;
+  column-gap: 55px;
   margin-top: 30px;
 }
 
@@ -29,8 +30,19 @@
   background: #971831;
   border-radius: 17px;
   padding: 7px 13px 7px 40px;
-  margin-right: 56px;
+
 }
+@media (max-width: 1250px) {
+  .kontakt-links{
+    flex-wrap: wrap;
+    column-gap: 0;
+  }
+  .kontakt-links div{
+    transform: scale(0.8);
+    font-size: 18px;
+  }
+}
+
 
 .phone-footer:before {
   position: absolute;
@@ -126,9 +138,7 @@
   }
 }
 
-
-
-@media (max-width: 920px) {
+@media (max-width: 639px) {
   .vehicle {
     display: none;
   }

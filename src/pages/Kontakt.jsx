@@ -5,7 +5,7 @@ const location = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2447.193
 
 export const Kontakt = () => {
     return (
-        <div className="kontakt-mobile ml-12 mr-16 mt-6 mb-6" style={{overflow: "hidden"}}>
+        <div className="kontakt-mobile ml-12 mr-12 mt-6 mb-6" style={{overflow: "hidden"}}>
             <div className="main-title mobile-title">
                 <h3>Kontakt</h3>
             </div>

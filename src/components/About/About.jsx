@@ -37,7 +37,7 @@ export const About = () => {
           <iframe
             title="map"
             src={location}
-            width="680"
+            width="640"
             height="311"
             loading="lazy"
           />
@@ -122,7 +122,7 @@ export const About = () => {
         </Slide>
       ) : (
         <div>
-          <div className="flex justify-center gap-56 mb-40">
+          <div className=" about ">
             <div className="icons">
               <img src={Sprzatanie} alt="sprzątanie" />
               <p style={{ textAlign: "center", width: 350, marginTop: 10 }}>

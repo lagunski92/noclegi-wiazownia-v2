@@ -11,7 +11,7 @@ import useMediaQuery from "./../../hooks/useMediaQuery";
 export const Footer = () => {
   const location = useLocation();
   const isKontaktPage = location.pathname === "/kontakt";
-  const isMobile = useMediaQuery("(max-width: 920px)");
+  const isMobile = useMediaQuery("(max-width: 639px)");
   return (
     <>
       {!isKontaktPage && (
