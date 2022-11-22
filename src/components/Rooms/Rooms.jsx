@@ -150,7 +150,7 @@ export const Rooms = () => {
                 <li>Wygodne pojedyncze łóżka</li>
               </ul>
             </div>
-            <div className="flex-col flex-1">
+            <div className="flex-col flex-1 ml-7">
               <span>CZĘŚĆ WSPÓLNA</span>
               <ul className="ml-11 mt-7">
                 <li>
