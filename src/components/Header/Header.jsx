@@ -15,7 +15,7 @@ const linkLocation = "https://goo.gl/maps/yN1SYRfiZGusMv5j8";
 
 export const Header = () => {
   const location = useLocation();
-  const isMobile = useMediaQuery("(max-width: 820px)");
+  const isMobile = useMediaQuery("(max-width: 920px)");
   const isMainPage = location.pathname === "/";
   const isKontaktPage = location.pathname === "/kontakt";
   const isGalleryPage = location.pathname === "/galeria";
