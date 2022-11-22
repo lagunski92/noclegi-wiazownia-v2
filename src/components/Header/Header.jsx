@@ -135,7 +135,7 @@ export const Header = () => {
           </div>
         )}
       </div>
-      {!isMobile && !isKontaktPage && (
+      {isMobile && isMainPage && (
         <div className="block mobile">
           <div className={isMainPage || isKontaktPage ? "mainTitle" : "title"}>
             <h2>Pokoje w Wiązownie</h2>

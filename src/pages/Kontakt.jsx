@@ -9,38 +9,38 @@ export const Kontakt = () => {
             <div className="main-title mobile-title">
                 <h3>Kontakt</h3>
             </div>
-            <div className="kontakt flex flex-row justify-center">
+            <div className="kontakt grid grid-cols-3 gap-30">
+                <div className="col">
                     <ul>
                         <li className="mail"><a href = "mailto: mojakwatera@gmail.com">mojakwatera@gmail.com</a></li>
                         <li className="tel">667 433 777</li>
                         <li className="city">Wiązownia</li>
                         <li className="fb"><a
-                          href="https://www.facebook.com/SuperNocleg"
-                          target="_blank"
-                          rel="noreferrer"
-                          className="facebook"
+                            href="https://www.facebook.com/SuperNocleg"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="facebook"
                         >
-                          FB/supernocleg
+                            FB/supernocleg
                         </a></li>
                         <li className="yotube">
-                          <a
-                          href="https://www.youtube.com/channel/UC_qzc9J4BGW2B3PF6sXNgUw"
-                          target="_blank"
-                          rel="noreferrer"
-                          className="youtube"
-                        >
-                            SuperNocleg - Wiązowna k. Warszawy
-                        </a></li>
+                            <a
+                                href="https://www.youtube.com/channel/UC_qzc9J4BGW2B3PF6sXNgUw"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="youtube"
+                            >
+                                SuperNocleg - Wiązowna k. Warszawy
+                            </a></li>
                     </ul>
-
-                <div className="iframe-mobile flex-row mt-24">
-                    <iframe
-                        title="map"
-                        src={location}
-                        width="900"
-                        height="355"
-                        loading="lazy"
-                    />
+                </div>
+                <div className="col-span-2">
+                    <div className="map-responsive mt-5">
+                        <iframe src={location}
+                                title="map"
+                                width="600" height="450" frameBorder="0"
+                                allowFullScreen></iframe>
+                    </div>
                 </div>
             </div>
         </div>
