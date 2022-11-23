@@ -41,6 +41,10 @@ h1 {
     margin-bottom: 40px;
 }
 
+.location ul{
+    width: 400px;
+}
+
 @media (max-width: 1400px) {
     .about{
         transform: scale(0.8);
@@ -49,9 +53,16 @@ h1 {
     .title-mobile {
         margin-left: 30px;
     }
+
+    .location ul{
+        width: 250px;
+    }
 }
 
 @media (max-width: 920px) {
+    .location span{
+        font-size: 20px;
+    }
     .iframe-about iframe {
         min-width: 360px;
     }
@@ -73,8 +84,6 @@ h1 {
     .title-mobile h1{
         margin-bottom: 50px;
     }
-    .main-title {
-    }
     .standart {
         width: 157px;
         height: 67px;
@@ -83,5 +92,8 @@ h1 {
         left: 0;
     }
 
+    .location ul{
+        width: 350px;
+    }
 
 }

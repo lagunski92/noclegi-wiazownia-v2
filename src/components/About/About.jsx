@@ -17,8 +17,8 @@ export const About = () => {
       <div className="main-title">
         <h3>O nas</h3>
       </div>
-      <div className="about-mobile flex flex-row justify-center ml-72 mr-72 mt-28 mb-40">
-        <div className="location flex-col flex-1 mr-4">
+      <div className="about-mobile grid grid-cols-3 mt-28 mb-40 gap-10">
+        <div className="location col-span-1">
           <span>LOKALIZACJA</span>
           <ul className="ml-11 mt-7">
             <li>Wiązownia</li>
@@ -33,14 +33,15 @@ export const About = () => {
             <li>W pobliżu sklep spożywczy i stacja benzynowa</li>
           </ul>
         </div>
-        <div className="iframe-about flex-col flex-1">
+        <div className="col col-span-2 mt-5 ">
           <iframe
-            title="map"
             src={location}
-            width="640"
-            height="311"
-            loading="lazy"
-          />
+            title="map"
+            width="100%"
+            height="320"
+            frameBorder="0"
+            allowFullScreen
+          ></iframe>
         </div>
       </div>
       <div className="ml-72 title-mobile">
