@@ -119,7 +119,11 @@ export const Rooms = () => {
               </li>
               <li>
                 <p>
-                  <img src={Lodowka} alt="lodówka" />
+                  <img
+                    src={Lodowka}
+                    alt="lodówka"
+                    style={{ position: "relative", top: "-9px" }}
+                  />
                 </p>
                 <p>Lodówka</p>
               </li>
@@ -131,7 +135,11 @@ export const Rooms = () => {
               </li>
               <li>
                 <p>
-                  <img src={Czajnik} alt="czajnik" />
+                  <img
+                    src={Czajnik}
+                    alt="czajnik"
+                    style={{ position: "relative", top: "-5px" }}
+                  />
                 </p>
                 <p>Czajnik</p>
               </li>
