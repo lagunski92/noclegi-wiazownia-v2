@@ -8,7 +8,7 @@
 }
 
 .description {
-    height: 164px;
+    max-height: 220px;
     width: 392px;
     border: 3px solid #68B982;
     border-radius: 25px;

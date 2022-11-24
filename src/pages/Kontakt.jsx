@@ -9,8 +9,8 @@ export const Kontakt = () => {
             <div className="main-title mobile-title">
                 <h3>Kontakt</h3>
             </div>
-            <div className="kontakt grid grid-cols-3 gap-30">
-                <div className="col">
+            <div className="kontakt grid grid-cols-6 gap-30">
+                <div className="kontakt-data col-span-2 col-start-2">
                     <ul>
                         <li className="mail"><a href = "mailto: mojakwatera@gmail.com">mojakwatera@gmail.com</a></li>
                         <li className="tel">667 433 777</li>
@@ -34,7 +34,7 @@ export const Kontakt = () => {
                             </a></li>
                     </ul>
                 </div>
-                <div className="col-span-2">
+                <div className="col-span-3">
                     <div className="map-responsive mt-5">
                         <iframe src={location}
                                 title="map"
