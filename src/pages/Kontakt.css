@@ -72,6 +72,7 @@
   }
 
   .map-responsive iframe {
+    height: 100%;
     /*top: -50px;*/
   }
 
