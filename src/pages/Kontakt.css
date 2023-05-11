@@ -22,9 +22,10 @@
 
 .map-responsive {
   overflow: visible;
-  padding-bottom: 56.25%;
+ /* padding-bottom: 56.25%;*/
   position: relative;
-  height: 0;
+  height: 450px;
+  width: 100%;
 }
 
 .map-responsive iframe {
@@ -37,7 +38,7 @@
 
 @media (max-width: 700px) {
   .map-responsive {
-    padding-bottom: 50% !important;
+    /*padding-bottom: 50% !important;*/
   }
 
   .map-responsive iframe {
@@ -47,11 +48,11 @@
 
 @media (max-width: 540px) {
   .map-responsive {
-    padding-bottom: 60% !important;
+    /*padding-bottom: 60% !important;*/
   }
 
   .map-responsive iframe {
-    top: -90px !important;
+   /* top: -90px !important;*/
   }
 }
 
@@ -67,11 +68,11 @@
   .map-responsive {
     overflow: visible;
     position: relative;
-    padding-bottom: 25%;
+   /* padding-bottom: 25%;*/
   }
 
   .map-responsive iframe {
-    top: -50px;
+    /*top: -50px;*/
   }
 
   .kontakt ul {
@@ -123,7 +124,7 @@
   content: url("./../assets/icons/Map_icon.png");
 }
 
-@media (max-width: 920px) {
+@media (max-width: 991px) {
   .kontakt li {
     font-size: 16px;
     width: 375px;

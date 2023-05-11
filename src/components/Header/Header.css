@@ -215,12 +215,11 @@
   z-index: 0;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 991px) {
   .header-wrapper {
     position: relative;
     background-size: contain;
     height: 232px;
-    top: 25px;
   }
 
   .mainTitle,
@@ -298,7 +297,7 @@
   }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 991px) {
   .header-wrapper-gallery {
     background: url("./../../assets/icons/Banner.png") no-repeat center 60px;
     -webkit-background-size: 100% auto;

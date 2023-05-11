@@ -31,13 +31,13 @@ export const Rooms = () => {
             image === Room_2
               ? { backgroundColor: "#971831", color: "white" }
               : {
-                  backgroundColor: "white",
-                  color: "black",
-                }
+                backgroundColor: "white",
+                color: "black"
+              }
           }
         >
           <img src={image === Room_2 ? UsersWhite : Users} alt="users" />{" "}
-          <span>2 osobowe</span>
+          <span>dla 2 osób</span>
         </div>
         <div
           className="test users img"
@@ -46,13 +46,13 @@ export const Rooms = () => {
             image === Room_3
               ? { backgroundColor: "#971831", color: "white" }
               : {
-                  backgroundColor: "white",
-                  color: "black",
-                }
+                backgroundColor: "white",
+                color: "black"
+              }
           }
         >
           <img src={image === Room_3 ? UsersWhite : Users} alt="users" />{" "}
-          <span>3 osobowe</span>
+          <span>dla 3 osób</span>
         </div>
         <div
           className="test users img"
@@ -61,9 +61,9 @@ export const Rooms = () => {
             image === Room_4
               ? { backgroundColor: "#971831", color: "white" }
               : {
-                  backgroundColor: "white",
-                  color: "black",
-                }
+                backgroundColor: "white",
+                color: "black"
+              }
           }
         >
           <img
@@ -71,7 +71,7 @@ export const Rooms = () => {
             width="1140px"
             alt="users"
           />{" "}
-          <span>4 osobowe</span>
+          <span>dla 4 osób</span>
         </div>
         <div
           className="test users img"
@@ -80,13 +80,13 @@ export const Rooms = () => {
             image === Room_6
               ? { backgroundColor: "#971831", color: "white" }
               : {
-                  backgroundColor: "white",
-                  color: "black",
-                }
+                backgroundColor: "white",
+                color: "black"
+              }
           }
         >
           <img src={image === Room_6 ? UsersWhite : Users} alt="users" />{" "}
-          <span>6 osobowe</span>
+          <span>dla 6 osób</span>
         </div>
       </div>
       <div className="flex justify-center equipment">
@@ -98,12 +98,35 @@ export const Rooms = () => {
                 <p>
                   <img src={Wymiary} alt="wymiary" />
                 </p>
-                <p>
-                  ~ 20m
-                  <sup>
-                    <small>2</small>
-                  </sup>
-                </p>
+                {image === Room_2 ?
+                  <p>
+                    15m
+                    <sup>
+                      <small>2</small>
+                    </sup>
+                  </p> :
+                  image === Room_3 ?
+                    <p>
+                      ~ 20m
+                      <sup>
+                        <small>2</small>
+                      </sup>
+                    </p> :
+                    image === Room_4 ?
+                      <p>
+                        > 20m
+                        <sup>
+                          <small>2</small>
+                        </sup>
+                      </p> :
+                      image === Room_6 ?
+                        <p>
+                          45m
+                          <sup>
+                            <small>2</small>
+                          </sup>
+                        </p> : true
+                }
               </li>
               <li>
                 <p>
@@ -148,27 +171,73 @@ export const Rooms = () => {
           <div className="mobile-description flex flex-row flex-wrap justify-center ml-32 mt-28 mb-40">
             <div className="flex-col flex-1 ml-7">
               <span>POKÓJ</span>
-              <ul className="ml-11 mt-7">
-                <li>Duży przestrzenny pokój</li>
-                <li>Oddzielna łazienka z ciepłą wodą</li>
-                <li>
-                  Pokój wyposażony między innymi w telewizor, lodówkę, szafy,
-                  stoliki nocne, czajnik elektryczny
-                </li>
-                <li>Wygodne pojedyncze łóżka</li>
-              </ul>
+              {image === Room_2
+                ?
+                <ul className="ml-11 mt-7">
+                  <li>jasny/widny,</li>
+                  <li>łazienka (wejście z pokoju),</li>
+                  <li>telewizor LED 32”,
+                  </li>
+                  <li>lodówka,</li>
+                  <li>duży stół, krzesła, szafa, szafki nocne przy łóżkach,</li>
+                  <li>pojedyncze łóżka,</li>
+                  <li>wentylacja mechaniczna pokoju</li>
+                  <li>chłodzenie (w sezonie letnim).</li>
+                </ul>
+                : image === Room_3
+                  ?
+                  <ul className="ml-11 mt-7">
+                    <li>duży, przestronny, jasny pokój,</li>
+                    <li>łazienka (wejście z pokoju),</li>
+                    <li>telewizor LED 32”,</li>
+                    <li>lodówka,</li>
+                    <li>duży stół, krzesła, szafa, szafki nocne przy łóżkach,</li>
+                    <li>pojedyncze łóżka,</li>
+                    <li>wentylacja mechaniczna pokoju,</li>
+                    <li>chłodzenie (w sezonie letnim).</li>
+                  </ul>
+                  :
+                  image === Room_4
+                    ?
+                    <ul className="ml-11 mt-7">
+                      <li>duże, przestronne, widne pokoje,</li>
+                      <li>łazienka (wejście z pokoju lub z korytarza w zależności od pokoju),</li>
+                      <li>telewizor LED 32”,</li>
+                      <li>lodówka,</li>
+                      <li>duży stół, krzesła, szafa, szafki nocne przy łóżkach,</li>
+                      <li>pojedyncze łóżka,</li>
+                      <li>wentylacja mechaniczna pokoju,</li>
+                      <li>chłodzenie (w sezonie letnim).</li>
+                    </ul>
+                    :
+                    image === Room_6
+                      ?
+                      <ul className="ml-11 mt-7">
+                        <li>duży, przestronny, jasny pokój,</li>
+                        <li>łazienka (wejście z pokoju),</li>
+                        <li>telewizor LED 32”,</li>
+                        <li>lodówka,</li>
+                        <li>duży stół, krzesła, szafa, szafki nocne przy łóżkach,</li>
+                        <li>pojedyncze łóżka,</li>
+                        <li>wentylacja mechaniczna pokoju,</li>
+                        <li>chłodzenie (w sezonie letnim).</li>
+                      </ul>
+                      : true
+
+              }
+
             </div>
             <div className="flex-col flex-1 ml-7">
               <span>CZĘŚĆ WSPÓLNA</span>
+
               <ul className="ml-11 mt-7">
                 <li>
-                  Dwie kuchnie wyposażone we wszystkie potrzebne sprzęty, między
+                  dwie kuchnie wyposażone we wszystkie potrzebne sprzęty, między
                   innymi w płytę indukcyjną, lodówkę, mikrofalę, czajnik, garnki
-                  i naczynia
+                  i naczynia,
                 </li>
-                <li>Oddzielna łazienka z ciepłą wodą</li>
-                <li>Pralnia</li>
-                <li>Parking monitorowany</li>
+                <li>pralnia,</li>
+                <li>parking monitorowany (samochody osobowe i dostawcze).</li>
               </ul>
             </div>
           </div>

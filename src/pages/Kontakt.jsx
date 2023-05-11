@@ -10,8 +10,8 @@ export const Kontakt = () => {
                 <h3>Kontakt</h3>
             </div>
             <div className="kontakt grid grid-cols-6 gap-30">
-                <div className="kontakt-data col-span-2 col-start-2">
-                    <ul>
+                <div className="kontakt-data lg:col-span-2 col-span-12 col-start-2">
+                    <ul className="w-full">
                         <li className="mail"><a href = "mailto: mojakwatera@gmail.com">mojakwatera@gmail.com</a></li>
                         <li className="tel">667 433 777</li>
                         <li className="city">Wiązownia</li>
@@ -34,11 +34,11 @@ export const Kontakt = () => {
                             </a></li>
                     </ul>
                 </div>
-                <div className="col-span-3">
+                <div className="lg:col-span-4 col-span-12 lg:mt-0 mt-28">
                     <div className="map-responsive mt-5">
                         <iframe src={location}
                                 title="map"
-                                width="600" height="450" frameBorder="0"
+                                width="" height="" frameBorder="0"
                                 allowFullScreen></iframe>
                     </div>
                 </div>

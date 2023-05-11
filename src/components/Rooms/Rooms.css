@@ -95,8 +95,9 @@ ul {
   margin-right: 10px;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 991px) {
   .rooms-wrapper {
+    margin-top: 60px;
     margin-left: 24px;
     margin-right: 24px;
   }
