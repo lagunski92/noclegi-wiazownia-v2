@@ -179,9 +179,8 @@ export const Images = () => {
       </div>:
       <Slide autoplay={false}>
         {rooms.map((el, index, array) => (
-          <div className="each-slide-effect">
+          <div key={el.id} className="each-slide-effect">
             <img
-              key={el.id}
               src={el.smallImage}
               alt="room"
               onClick={() => onClickHandler(index, array)}
@@ -206,9 +205,8 @@ export const Images = () => {
       </div>:
       <Slide autoplay={false}>
         {kitchen.map((el, index, array) => (
-          <div className="each-slide-effect">
+          <div key={el.id} className="each-slide-effect">
             <img
-              key={el.id}
               src={el.smallImage}
               alt="kitchen"
               onClick={() => onClickHandler(index, array)}
@@ -234,9 +232,8 @@ export const Images = () => {
         </div>:
         <Slide autoplay={false}>
           {bathroom.map((el, index, array) => (
-            <div className="each-slide-effect">
+            <div key={el.id} className="each-slide-effect">
               <img
-                key={el.id}
                 src={el.smallImage}
                 alt="laundry"
                 onClick={() => onClickHandler(index, array)}
@@ -262,9 +259,8 @@ export const Images = () => {
       </div>:
       <Slide autoplay={false}>
         {laundry.map((el, index, array) => (
-          <div className="each-slide-effect">
+          <div key={el.id} className="each-slide-effect">
             <img
-              key={el.id}
               src={el.smallImage}
               alt="laundry"
               onClick={() => onClickHandler(index, array)}
@@ -290,9 +286,8 @@ export const Images = () => {
       </div>:
       <Slide autoplay={false}>
         {building.map((el, index, array) => (
-          <div className="each-slide-effect">
+          <div key={el.id} className="each-slide-effect">
           <img
-            key={el.id}
             src={el.smallImage}
             alt="building"
             onClick={() => onClickHandler(index, array)}

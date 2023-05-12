@@ -96,8 +96,6 @@ export const Description = () => {
             </span>
           </div>
         </div>}
-
-
     </div>
   );
 };
