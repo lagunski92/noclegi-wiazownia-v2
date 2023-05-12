@@ -54,12 +54,17 @@ import Building_3 from "./../../assets/images/Building3_small.png";
 import Building_1_big from "./../../assets/images/Building1_big.png";
 import Building_2_big from "./../../assets/images/Building2_big.png";
 import Building_3_big from "./../../assets/images/Building3_big.png";
+
+
+import Laundry_1 from "./../../assets/images/Laundry1_small.png";
+import Laundry_1_big from "./../../assets/images/Laundry1_big.png";
+
 import { Slide } from "react-slideshow-image";
 import useMediaQuery from "../../hooks/useMediaQuery";
 
 
 export const Images = () => {
-  const isMobile = useMediaQuery("(max-width: 820px)");
+  const isMobile = useMediaQuery("(max-width: 991px)");
 
   const rooms = [
     {
@@ -135,6 +140,14 @@ export const Images = () => {
     { id: 4, smallImage: Kitchen_4, bigImage: Kitchen_4_big },
   ];
 
+  const laundry = [
+    {
+      id: 1,
+      smallImage: Laundry_1,
+      bigImage: Laundry_1_big,
+    }
+  ];
+
   const [photoIndex, setPhotoIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
   const [data, setData] = useState([]);
@@ -157,7 +170,7 @@ export const Images = () => {
       {!isMobile ? <div className="flex flex-wrap rooms">
         {rooms.map((el, index, array) => (
           <img
-            key={index}
+            key={el.id}
             src={el.smallImage}
             alt="room"
             onClick={() => onClickHandler(index, array)}
@@ -168,7 +181,7 @@ export const Images = () => {
         {rooms.map((el, index, array) => (
           <div className="each-slide-effect">
             <img
-              key={index}
+              key={el.id}
               src={el.smallImage}
               alt="room"
               onClick={() => onClickHandler(index, array)}
@@ -184,7 +197,7 @@ export const Images = () => {
       {!isMobile ? <div className="flex flex-wrap rooms">
         {kitchen.map((el, index, array) => (
           <img
-            key={index}
+            key={el.id}
             src={el.smallImage}
             alt="kitchen"
             onClick={() => onClickHandler(index, array)}
@@ -195,7 +208,7 @@ export const Images = () => {
         {kitchen.map((el, index, array) => (
           <div className="each-slide-effect">
             <img
-              key={index}
+              key={el.id}
               src={el.smallImage}
               alt="kitchen"
               onClick={() => onClickHandler(index, array)}
@@ -212,7 +225,7 @@ export const Images = () => {
       {!isMobile? <div className="flex flex-wrap rooms">
           {bathroom.map((el, index, array) => (
             <img
-              key={index}
+              key={el.id}
               src={el.smallImage}
               alt="laundry"
               onClick={() => onClickHandler(index, array)}
@@ -223,7 +236,7 @@ export const Images = () => {
           {bathroom.map((el, index, array) => (
             <div className="each-slide-effect">
               <img
-                key={index}
+                key={el.id}
                 src={el.smallImage}
                 alt="laundry"
                 onClick={() => onClickHandler(index, array)}
@@ -238,9 +251,9 @@ export const Images = () => {
         <img src={Laundry} alt="laundry" /> <span>Pralnia</span>
       </div>
       {!isMobile? <div className="flex flex-wrap rooms">
-        {bathroom.map((el, index, array) => (
+        {laundry.map((el, index, array) => (
           <img
-            key={index}
+            key={el.id}
             src={el.smallImage}
             alt="laundry"
             onClick={() => onClickHandler(index, array)}
@@ -248,10 +261,10 @@ export const Images = () => {
         ))}
       </div>:
       <Slide autoplay={false}>
-        {bathroom.map((el, index, array) => (
+        {laundry.map((el, index, array) => (
           <div className="each-slide-effect">
             <img
-              key={index}
+              key={el.id}
               src={el.smallImage}
               alt="laundry"
               onClick={() => onClickHandler(index, array)}
@@ -268,7 +281,7 @@ export const Images = () => {
       {!isMobile ? <div className="flex flex-wrap rooms">
         {building.map((el, index, array) => (
           <img
-            key={index}
+            key={el.id}
             src={el.smallImage}
             alt="building"
             onClick={() => onClickHandler(index, array)}
@@ -279,7 +292,7 @@ export const Images = () => {
         {building.map((el, index, array) => (
           <div className="each-slide-effect">
           <img
-            key={index}
+            key={el.id}
             src={el.smallImage}
             alt="building"
             onClick={() => onClickHandler(index, array)}

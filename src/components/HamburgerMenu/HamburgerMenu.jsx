@@ -20,7 +20,7 @@ export const HamburgerMenu = () => {
   const ref = useRef();
   useOnClickOutside(ref, () => setOpen(false));
   return (
-    <Menu right isOpen={isOpen} onOpen={handleIsOpen} onClose={handleIsOpen}>
+    <Menu right isOpen={isOpen} onOpen={handleIsOpen} onClose={handleIsOpen} className="menu" slide>
       <NavLink
         to="galeria"
         id="home"
