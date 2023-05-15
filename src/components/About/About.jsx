@@ -105,7 +105,7 @@ export const About = () => {
               </p>
               <p style={{ fontWeight: 600 }}>REGULARNE SPRZĄTANIE</p>
               <p style={{ textAlign: "center", marginBottom: 10 }}>
-                Wszystkie pokoje oraz łazienki są sprzątane 2x w tygodni. Części wspólne sprzątane są codziennie.
+                Wszystkie pokoje oraz łazienki są sprzątane 2x w tygodniu. Części wspólne sprzątane są codziennie.
               </p>
             </div>
           </div>
@@ -176,7 +176,7 @@ export const About = () => {
                   fontWeight: 400
                 }}
               >
-                Wszystkie pokoje oraz łazienki są sprzątane 2x w tygodni. Części wspólne sprzątane są codziennie.
+                Wszystkie pokoje oraz łazienki są sprzątane 2x w tygodniu. Części wspólne sprzątane są codziennie.
               </p>
             </div>
             <div className="standart icons">
