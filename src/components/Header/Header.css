@@ -1,0 +1,320 @@
+.header-wrapper {
+  background: url("./../../assets/icons/Map.png") no-repeat center right;
+  -webkit-background-size: 60% 100%;
+  -moz-background-size: 60% 100%;
+  -o-background-size: 60% 100%;
+  background-size: 60% 100%;
+  height: 380px;
+}
+
+.header-wrapper-gallery {
+  background: url("./../../assets/icons/Banner.png") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+
+.links-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 111px;
+  margin: 0;
+  padding: 0;
+}
+
+.nocleg {
+  width: 170px;
+  height: 111px;
+  margin-top: 16px;
+  margin-left: 10px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links a:active {
+  text-decoration: underline #971831;
+  text-decoration-thickness: 4px;
+}
+
+.links img:hover {
+  transform: scale(1.2);
+}
+
+.image {
+  margin-right: 75px;
+  font-weight: 600;
+  font-size: 25px;
+  color: black;
+}
+
+.youtube {
+  width: 36px;
+  height: 25px;
+  margin-top: -5px;
+  margin-right: 34px;
+}
+
+.facebook {
+  width: 30px;
+  height: 30px;
+  margin-top: -5px;
+  margin-right: 32px;
+}
+
+.title {
+  display: block;
+  text-align: start;
+  padding-bottom: 10px;
+  margin-bottom: 50px;
+  z-index: -100;
+}
+
+.title h2 {
+  color: white;
+  width: 100%;
+  padding-top: 23px;
+  padding-left: 34px;
+  font-size: 48px;
+  line-height: 59px;
+  font-weight: 700;
+}
+
+.mainTitle h2 {
+  color: #971831;
+  width: 100%;
+  padding-top: 23px;
+  padding-left: 34px;
+  font-size: 48px;
+  line-height: 59px;
+  font-weight: 700;
+}
+
+.title h3 {
+  color: white;
+  width: 100%;
+  margin-top: -5px;
+  padding-left: 34px;
+  margin-left: 0;
+  margin-bottom: 17px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.mainTitle h3 {
+  color: #971831;
+  width: 100%;
+  margin-top: -5px;
+  padding-left: 34px;
+  margin-left: 0;
+  margin-bottom: 17px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.contact {
+  display: inline-flex;
+  justify-content: flex-start;
+  background-color: white;
+  border-radius: 15px;
+  width: 214px;
+  height: 42px;
+  margin-left: 34px;
+  margin-right: 45px;
+}
+
+.mainContact {
+  display: inline-flex;
+  justify-content: flex-start;
+  background-color: #971831;
+  border-radius: 15px;
+  width: 214px;
+  height: 42px;
+  margin-left: 34px;
+  margin-right: 45px;
+}
+
+.map {
+  display: inline-flex;
+  align-items: center;
+}
+
+.map-icon {
+  width: 35px;
+  height: 35px;
+  margin-right: 9px;
+}
+
+.map a {
+  font-size: 23px;
+  font-weight: 600;
+  color: white;
+  border-radius: 15px;
+  margin: 0;
+}
+
+.mainPageMap {
+  display: inline-flex;
+  align-items: center;
+}
+
+.mainPageMap a {
+  font-size: 23px;
+  font-weight: 600;
+  color: #971831;
+  border-radius: 15px;
+  margin: 0;
+}
+
+.phone-icon {
+  width: 14px;
+  height: 17px;
+  margin-top: 14px;
+  margin-left: 21px;
+  margin-right: 10px;
+  transform: rotate(4deg);
+}
+
+.contact p {
+  font-size: 24px;
+  font-weight: 500;
+  background-color: white;
+  border-radius: 15px;
+  padding-top: 5px;
+}
+
+.mainContact p {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: 15px;
+  padding-top: 5px;
+}
+
+.image:hover {
+  color: #971831;
+}
+
+.mainPageMap:hover,
+.map:hover {
+  transform: scale(1.1);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  min-height: 120px;
+  z-index: 0;
+}
+
+@media (max-width: 991px) {
+  .header-wrapper {
+    position: relative;
+    background-size: contain;
+    height: 232px;
+  }
+
+  .mainTitle,
+  .title {
+    background-color: #ededed;
+  }
+
+  .mainTitle h2,
+  .title h2 {
+    font-size: 28px;
+    padding-left: 24px;
+  }
+
+  .mainTitle h3,
+  .title h3 {
+    font-size: 24px;
+    padding-left: 24px;
+  }
+
+  .map a {
+    font-size: 16px;
+  }
+
+  .mainPageMap a {
+    font-size: 16px;
+  }
+
+  .contact {
+    width: 150px;
+    height: 35px;
+    margin-left: 24px;
+    margin-right: 25px;
+  }
+
+  .mainContact {
+    width: 150px;
+    height: 35px;
+    margin-left: 24px;
+    margin-right: 25px;
+  }
+
+  .contact p {
+    font-size: 15px !important;
+    padding-top: 7px;
+  }
+
+  .mainContact p {
+    font-size: 15px !important;
+    padding-top: 7px;
+  }
+
+  .mobile {
+    background-color: #ededed;
+  }
+
+  .phone-icon {
+    margin-top: 10px;
+  }
+
+  .nocleg {
+    width: 72px;
+    height: 47px;
+  }
+
+  .nav {
+    min-height: 55px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: white;
+  }
+
+  .mobile-gallery {
+    background: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .header-wrapper-gallery {
+    background: url("./../../assets/icons/Banner.png") no-repeat center 60px;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
+    max-height: 550px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-wrapper-gallery {
+    background: url("./../../assets/icons/Banner.png") no-repeat center 60px;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
+    height: 285px;
+  }
+}

@@ -1,0 +1,95 @@
+.images-wrapper img:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.images-title h3 {
+  color: black;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 39px;
+  text-decoration: underline #971831;
+  text-decoration-thickness: 8px;
+  margin-top: 21px;
+  margin-left: 30px;
+  margin-bottom: 0;
+}
+
+.room p {
+  padding-left: 14px;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 23px;
+}
+
+.room img {
+  padding-bottom: 6px;
+  width: 29px;
+  height: 29px;
+}
+
+.rooms {
+  margin: 0 30px 0 30px;
+  gap: 22px;
+}
+
+.laundry img {
+  margin-bottom: -25px !important;
+  width: 27px !important;
+  padding-top: 4px;
+}
+.users img {
+  margin-bottom: -26px !important;
+  width: 27px !important;
+  padding-top: 4px;
+}
+.kitchen img {
+  margin-bottom: -26px !important;
+  width: 27px !important;
+  padding-top: 4px;
+}
+.bathroom img {
+  margin-bottom: -26px !important;
+  width: 27px !important;
+  padding-top: 4px;
+}
+.building {
+padding-left: 6px !important;
+}
+
+.test img {
+  margin-bottom: -26px;
+}
+.test span {
+  margin-left: 40px;
+  font-size: 19px;
+  line-height: 23px;
+  font-weight: 500;
+}
+.test {
+  width: fit-content;
+  height: 42px;
+  border: 2px solid #971831;
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-top: 2px;
+  margin: 47px 30px 47px 30px;
+}
+
+@media (max-width: 991px) {
+  .test {
+    transform: scale(0.8);
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px 0 10px 0;
+    border-radius: 20px;
+  }
+
+  .images-title h3{
+    font-size: 24px;
+  }
+  .main-title h3{
+    font-size: 24px !important;
+  }
+}

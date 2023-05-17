@@ -1,0 +1,245 @@
+.footer {
+  position: relative;
+  width: 100%;
+  min-height: 562px;
+  background-image: url("./../../assets/images/Tlo_kontakt.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.kontakt-links {
+  display: flex;
+  justify-content: center;
+  column-gap: 55px;
+  margin-top: 30px;
+}
+
+.youtube-footer:hover,
+.mail-footer:hover,
+.location-footer:hover,
+.facebook-footer:hover {
+  transform: scale(1.1);
+}
+
+.kontakt-links div {
+  position: relative;
+  font-size: 20px;
+  color: white;
+  background: #971831;
+  border-radius: 17px;
+  padding: 7px 13px 7px 40px;
+
+}
+@media (max-width: 1250px) {
+  .kontakt-links{
+    flex-wrap: wrap;
+    column-gap: 0;
+  }
+  .kontakt-links div{
+    transform: scale(0.8);
+    font-size: 18px;
+  }
+}
+
+
+.phone-footer:before {
+  position: absolute;
+  left: 7px;
+  content: url("./../../assets/icons/Phone_white.png");
+}
+
+.mail-footer:before {
+  position: absolute;
+  top: 3px;
+  left: 7px;
+  content: url("./../../assets/icons/Mail_white.png");
+}
+
+.mail-footer {
+  padding-left: 50px !important;
+}
+
+.location-footer:before {
+  position: absolute;
+  left: 10px;
+  content: url("./../../assets/icons/Map_white.png");
+}
+
+.location-footer {
+  padding-left: 55px !important;
+}
+
+.facebook-footer:before {
+  position: absolute;
+  left: 8px;
+  content: url("./../../assets/icons/Facebook_white.png");
+}
+
+.facebook-footer {
+  padding-left: 50px !important;
+}
+
+.youtube-footer:before {
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  content: url("./../../assets/icons/Youtube_white.png");
+}
+
+.youtube-footer {
+  padding-left: 55px !important;
+}
+
+.vehicle {
+  position: absolute;
+  bottom: 40px;
+  left: -250px;
+
+  -webkit-animation-name: ride; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 17s; /* Safari 4.0 - 8.0 */
+  animation-name: ride;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.vehicle.p1 {
+  width: 202px;
+  height: 102px;
+}
+.vehicle.p2 {
+  width: 140px;
+  height: 55px;
+  animation-delay: 2s;
+}
+
+.vehicle.p3 {
+  width: 144px;
+  height: 78px;
+  animation-delay: 4s;
+  animation-duration: 16s;
+}
+
+.vehicle.p4 {
+  width: 102px;
+  height: 54px;
+  animation-delay: 6s;
+  animation-duration: 20s;
+}
+
+@keyframes ride {
+  0% {
+    left: -115px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@media (max-width: 639px) {
+  .vehicle {
+    display: none;
+  }
+
+  .kontakt-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .kontakt-links div {
+    font-size: 16px;
+    padding: 7px 7px 7px 7px;
+  }
+
+  .phone-mobile{
+    border-radius: 15px;
+    background-color: #971831;
+    width: 155px;
+    padding: 3px 25px 3px 35px;
+    color: white;
+    text-align: right;
+  }
+
+  .phone-mobile:before{
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    content: url("./../../assets/icons/Phone_white.png");
+    transform: scale(0.8);
+  }
+
+  .mail-mobile{
+    border-radius: 15px;
+    background-color: #971831;
+    width: 260px;
+    padding: 3px 35px 3px 40px;
+    color: white;
+    text-align: right;
+  }
+
+  .mail-mobile:before{
+    position: absolute;
+    left: 16px;
+    top: 58px;
+    content: url("./../../assets/icons/Mail_white.png");
+    transform: scale(0.8);
+  }
+
+  .map-mobile:before {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    content: url("./../../assets/icons/Map_white.png");
+    transform: scale(0.8);
+  }
+
+  .map-mobile {
+    border-radius: 15px;
+    background-color: #971831;
+    width: 175px;
+    padding: 3px 20px 3px 25px;
+    color: white;
+    text-align: right;
+  }
+
+  .facebook-mobile:before {
+    position: absolute;
+    top: 136px;
+    left: 20px;
+    content: url("./../../assets/icons/Facebook_white.png");
+    transform: scale(0.7);
+  }
+
+  .facebook-mobile {
+    border-radius: 15px;
+    background-color: #971831;
+    width: 163px;
+    padding: 3px 20px 3px 30px;
+    color: white;
+    text-align: right;
+  }
+
+  .youtube-mobile:before {
+    position: absolute;
+    top: 141px;
+    left: 190px;
+    content: url("./../../assets/icons/Youtube_white.png");
+    transform: scale(0.8);
+  }
+
+  .youtube-mobile {
+    border-radius: 15px;
+    background-color: #971831;
+    width: 145px;
+    padding: 3px 15px 3px 10px;
+    color: white;
+    text-align: right;
+  }
+
+  .footer {
+    background-image: url("./../../assets/images/Tlo_footer_mobile.png") !important;
+  }
+}

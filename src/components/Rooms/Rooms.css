@@ -1,0 +1,136 @@
+.main-title h3 {
+  color: black;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 39px;
+  text-decoration: underline #971831;
+  text-decoration-thickness: 8px;
+  text-underline-offset: 6px;
+  margin-bottom: 5px;
+}
+
+.rooms-wrapper {
+  margin-left: 47px;
+  margin-right: 47px;
+  margin-top: 33px;
+  overflow: hidden;
+}
+
+.img {
+  cursor: pointer;
+}
+
+.border {
+  border: 2px solid #c0c0c0;
+  border-radius: 0 0 10px 10px;
+}
+
+li {
+  font-size: 16px;
+  font-weight: 500;
+  list-style: outside;
+  margin-top: 15px;
+}
+
+ul {
+  width: 340px;
+}
+
+.border span {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.media {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.content {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.media .content {
+  padding: 5px;
+}
+
+.media .image2 {
+  margin-left: 12px;
+}
+
+.image2 {
+  margin-right: 0 !important;
+  margin-left: 10px;
+}
+
+.teapot {
+  margin-right: 0;
+}
+
+.media-wrapper {
+  position: relative;
+  left: 36px;
+}
+
+.shower {
+  position: relative;
+  right: 35px;
+}
+
+.equipment-wrapper ul {
+  display: flex;
+  min-width: 100%;
+  justify-content: space-around;
+  margin: 100px 15px 0 0;
+}
+.equipment-wrapper li {
+  display: flex;
+  justify-content: center;
+}
+
+.equipment-wrapper p {
+  margin-right: 10px;
+}
+
+@media (max-width: 991px) {
+  .rooms-wrapper {
+    margin-top: 60px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  li {
+    font-size: 15px;
+  }
+
+  .border span {
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  ul {
+    width: 242px;
+    margin-bottom: 20px;
+  }
+  .mobile-description {
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+
+  .rooms-mobile {
+    justify-content: center;
+    margin-left: -10px;
+    min-width: 340px;
+  }
+
+  .main-title h3 {
+    text-decoration-thickness: 4px;
+  }
+
+  .equipment-wrapper ul {
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+}

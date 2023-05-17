@@ -1,0 +1,95 @@
+.location span {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 55px;
+    color: #971831;
+}
+
+.standart {
+    margin-top: 20px;
+}
+
+.standart p{
+    margin-left: 50px;
+}
+
+.maps img{
+    margin-left: 20px;
+}
+
+.icons {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.icons img{
+    position: relative;
+    left: 75px;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    column-gap: 110px;
+    margin-bottom: 40px;
+}
+
+.location ul{
+    width: 100%;
+}
+
+@media (max-width: 1400px) {
+    .about{
+        transform: scale(0.8);
+        column-gap: 40px;
+    }
+    .title-mobile {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    .location span{
+        font-size: 20px;
+    }
+    .iframe-about iframe {
+        min-width: 360px;
+    }
+    h1 {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .about-mobile {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
+    .title-mobile {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .title-mobile h1{
+        margin-bottom: 50px;
+    }
+    .standart {
+        width: 157px;
+        height: 67px;
+    }
+    .icons img {
+        left: 0;
+    }
+
+    .location ul{
+        padding-right: 10px;
+    }
+
+}
